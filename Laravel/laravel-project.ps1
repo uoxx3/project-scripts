@@ -349,7 +349,11 @@ $newLaravelProjectArgs = @{
     );
     ArtisanCommands = @(
         @("install:broadcasting"),
-        @("install:api")
+        @("install:api"),
+        @("key:generate"),
+        @("lang:publish"),
+        @("storage:link"),
+        @("optimize:clear")
     )
 }
 New-LaravelProject @newLaravelProjectArgs
